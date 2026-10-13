@@ -1,0 +1,392 @@
+/* ==========================================================================
+   PORTALE MONTE NEVEGAL - STILI GLOBALI CONDIVISI
+   Architettura: ITIS Informatica - GPOI (Classe 5ITB)
+   Standard: WCAG 2.1 AA+ | HTML5 Semantico Puro (Zero div / Zero span)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. DESIGN TOKENS & VARIABILI GLOBALI
+   -------------------------------------------------------------------------- */
+:root {
+  /* Palette Cromatica Alpina Starter (Forest Green, Rock Gray, Snow White) */
+  --forest-green: #1b4d3e;              /* Verde abete profondo */
+  --forest-green-dark: #12382c;
+  --forest-green-light: #2d6a4f;
+  
+  --rock-gray: #4a5550;                 /* Grigio roccia dolomitica */
+  --rock-gray-light: #8a9690;
+  --rock-gray-border: #c4d1c4;
+
+  --snow-white: #ffffff;                /* Bianco neve */
+  --snow-white-soft: #f4f6f3;
+  --snow-white-alt: #e9eee6;
+
+  --colore-sfondo: var(--snow-white-soft);
+  --colore-superficie: var(--snow-white);
+  --colore-superficie-alt: var(--snow-white-alt);
+  --colore-testo: #1c261e;
+  --colore-testo-muto: var(--rock-gray);
+  --colore-bordo: var(--rock-gray-border);
+
+  --colore-primario: var(--forest-green);
+  --colore-primario-interazione: var(--forest-green-dark);
+  --colore-secondario: #8c4a1e;         /* Terracotta / terra montana */
+  --colore-secondario-interazione: #693310;
+  --colore-accento: var(--forest-green-light);
+  --colore-focus: #b84a00;              /* Arancio ambrato per focus visibile WCAG */
+
+  /* Tipografia Sistemica Accessibile */
+  --font-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-titoli: Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --spaziatura-xs: 0.5rem;
+  --spaziatura-sm: 0.75rem;
+  --spaziatura-md: 1.25rem;
+  --spaziatura-lg: 2rem;
+  --spaziatura-xl: 3.5rem;
+
+  --raggio-bordo: 8px;
+  --ombra-scheda: 0 4px 12px rgba(28, 38, 30, 0.08);
+  --ombra-hover: 0 8px 24px rgba(28, 38, 30, 0.14);
+  --transizione-standard: 0.2s ease-in-out;
+}
+
+/* --------------------------------------------------------------------------
+   2. RESET ACCESSIBILE E REGOLE BASE
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-base);
+  font-size: 100%;
+  line-height: 1.6;
+  color: var(--colore-testo);
+  background-color: var(--colore-sfondo);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Skip Link per Navigazione da Tastiera (WCAG 2.1 AA) */
+.salto-contenuto {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  background-color: var(--colore-primario);
+  color: #ffffff;
+  padding: 0.75rem 1.25rem;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: var(--raggio-bordo);
+  z-index: 1000;
+  transition: top var(--transizione-standard);
+}
+
+.salto-contenuto:focus {
+  top: 1rem;
+  outline: 3px solid var(--colore-focus);
+  outline-offset: 3px;
+}
+
+/* Gestione Focus Globale */
+:focus-visible {
+  outline: 3px solid var(--colore-focus);
+  outline-offset: 3px;
+}
+
+/* --------------------------------------------------------------------------
+   3. HEADER & NAVIGAZIONE PRINCIPALE
+   -------------------------------------------------------------------------- */
+body > header {
+  background-color: var(--colore-primario);
+  color: #ffffff;
+  padding: var(--spaziatura-md) var(--spaziatura-lg);
+  border-bottom: 4px solid var(--colore-secondario);
+}
+
+body > header h1 {
+  font-family: var(--font-titoli);
+  font-size: 1.85rem;
+  margin-bottom: var(--spaziatura-xs);
+  letter-spacing: 0.02em;
+}
+
+body > header p {
+  color: #d8e5dd;
+  font-size: 1rem;
+  max-width: 65ch;
+}
+
+nav {
+  margin-top: var(--spaziatura-md);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spaziatura-sm);
+}
+
+nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px; /* Target tocco minimo WCAG */
+  padding: var(--spaziatura-xs) var(--spaziatura-md);
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.12);
+  text-decoration: none;
+  border-radius: var(--raggio-bordo);
+  font-weight: 600;
+  transition: background-color var(--transizione-standard), transform var(--transizione-standard);
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background-color: var(--colore-secondario);
+}
+
+nav a[aria-current="page"] {
+  background-color: #ffffff;
+  color: var(--colore-primario);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* --------------------------------------------------------------------------
+   4. LAYOUT PRINCIPALE E SEZIONI SEMANTICHE
+   -------------------------------------------------------------------------- */
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spaziatura-lg) var(--spaziatura-md);
+  display: grid;
+  gap: var(--spaziatura-xl);
+}
+
+section {
+  background-color: var(--colore-superficie);
+  padding: var(--spaziatura-lg);
+  border-radius: var(--raggio-bordo);
+  border: 1px solid var(--colore-bordo);
+  box-shadow: var(--ombra-scheda);
+}
+
+section > header {
+  margin-bottom: var(--spaziatura-md);
+  border-bottom: 2px solid var(--colore-superficie-alt);
+  padding-bottom: var(--spaziatura-xs);
+}
+
+h2 {
+  font-family: var(--font-titoli);
+  font-size: 1.6rem;
+  color: var(--colore-primario);
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: var(--colore-secondario);
+  margin-bottom: var(--spaziatura-xs);
+}
+
+p {
+  margin-bottom: var(--spaziatura-sm);
+}
+
+/* Griglia per Articoli informativi */
+section.griglia-contenuti {
+  display: grid;
+  gap: var(--spaziatura-md);
+}
+
+section.griglia-contenuti > header {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 768px) {
+  section.griglia-contenuti {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+article {
+  background-color: var(--colore-superficie-alt);
+  padding: var(--spaziatura-md);
+  border-radius: var(--raggio-bordo);
+  border-left: 4px solid var(--colore-accento);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spaziatura-xs);
+}
+
+article:hover {
+  box-shadow: var(--ombra-hover);
+  transition: box-shadow var(--transizione-standard);
+}
+
+aside {
+  background-color: #fdfbf7;
+  border: 1px dashed var(--colore-secondario);
+  padding: var(--spaziatura-md);
+  border-radius: var(--raggio-bordo);
+  margin-top: var(--spaziatura-md);
+}
+
+/* --------------------------------------------------------------------------
+   5. FIGURE, IMMAGINI E DIDASCALIE
+   -------------------------------------------------------------------------- */
+figure {
+  margin: var(--spaziatura-sm) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spaziatura-xs);
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--raggio-bordo);
+  display: block;
+  object-fit: cover;
+  max-height: 420px;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: var(--colore-testo-muto);
+  font-style: italic;
+  padding-left: var(--spaziatura-xs);
+  border-left: 2px solid var(--colore-primario);
+}
+
+/* --------------------------------------------------------------------------
+   6. TABELLE ACCESSIBILI
+   -------------------------------------------------------------------------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--spaziatura-md) 0;
+  background-color: var(--colore-superficie);
+}
+
+caption {
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: var(--spaziatura-xs);
+  color: var(--colore-primario);
+  font-size: 1.1rem;
+}
+
+th,
+td {
+  padding: var(--spaziatura-sm) var(--spaziatura-md);
+  border: 1px solid var(--colore-bordo);
+  text-align: left;
+}
+
+th {
+  background-color: var(--colore-superficie-alt);
+  color: var(--colore-primario);
+  font-weight: 700;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fafbfa;
+}
+
+tbody tr:hover {
+  background-color: #edf2eb;
+}
+
+/* Liste di definizione semantiche */
+dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--spaziatura-xs) var(--spaziatura-md);
+  margin: var(--spaziatura-sm) 0;
+}
+
+dt {
+  font-weight: 700;
+  color: var(--colore-primario);
+}
+
+dd {
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   7. FOOTER E INFORMAZIONI ISTITUZIONALI
+   -------------------------------------------------------------------------- */
+body > footer {
+  background-color: #152219;
+  color: #d1ded5;
+  padding: var(--spaziatura-lg) var(--spaziatura-md);
+  margin-top: auto;
+}
+
+body > footer section {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: var(--spaziatura-md);
+}
+
+body > footer h2 {
+  grid-column: 1 / -1;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-family: var(--font-titoli);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: var(--spaziatura-xs);
+}
+
+@media (min-width: 768px) {
+  body > footer section {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+body > footer article {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid var(--colore-accento);
+  color: #d1ded5;
+}
+
+body > footer h3 {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+body > footer a {
+  color: #88c09a;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+body > footer a:hover,
+body > footer a:focus-visible {
+  color: #ffffff;
+}
+
+address {
+  font-style: normal;
+  line-height: 1.5;
+}

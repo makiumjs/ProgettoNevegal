@@ -1,0 +1,37 @@
+name: W3C HTML5 & Accessibilità Validator
+
+on:
+  push:
+    branches:
+      - main
+      - "feature/**"
+      - "team-**"
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate-html:
+    name: Validazione Markup HTML5 (Nu Html Checker)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repository
+        uses: actions/checkout@v4
+
+      - name: Esecuzione W3C HTML Validator
+        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+        with:
+          root: .
+          css: true
+          extra_flags: --also-check-svg --Werror
+
+      - name: Controllo Assenza Tag Non Semantici (div / span)
+        run: |
+          echo "Verifica vincolo architetturale: HTML5 Semantico Puro..."
+          if grep -rnE '<(div|span)([[:space:]>])' *.html; then
+            echo "❌ ERRORE DoD: Trovati tag <div> o <span> non consentiti nei file HTML."
+            exit 1
+          else
+            echo "✅ Tutti i file HTML rispettano il vincolo HTML5 Semantico Puro."
+          fi
