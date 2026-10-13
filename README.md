@@ -19,8 +19,16 @@ Il portale promuove il territorio alpino del **Monte Nevegal (Belluno)** attrave
 ```text
 ProgettoNevegal/
 ├── .github/
-│   └── workflows/
-│       └── w3c-validator.yml       # Pipeline CI per validazione W3C e controllo semantico
+│   ├── ISSUE_TEMPLATE/
+│   │   └── user_story.md           # Template per l'assegnazione attività ai Feature Team
+│   ├── workflows/
+│   │   └── w3c-validator.yml       # Pipeline CI per validazione W3C e controllo semantico
+│   └── PULL_REQUEST_TEMPLATE.md    # Template PR con checklist Definition of Done
+├── docs/                           # Documentazione didattica e di gestione GPOI
+│   ├── pianificazione-sprint.md    # Calendario 4 Sprint (Ottobre - Marzo, 2 ore/settimana)
+│   ├── rubrica-valutazione-gpoi.md # Griglia di valutazione docente (scala 1 - 10)
+│   └── templates/
+│       └── template-report-sprint.md # Modello report periodico (ogni 4 settimane)
 ├── img/                            # Asset grafici ottimizzati (kebab-case, minuscolo)
 │   └── placeholder.jpg
 ├── css/                            # Foglio di stile globale condiviso
@@ -33,6 +41,19 @@ ProgettoNevegal/
 ├── README.md                       # Overview del progetto e documentazione principale
 └── CONTRIBUTING.md                 # Regole Git, Scrumban, convenzioni e Definition of Done
 ```
+
+---
+
+## 📅 Pianificazione Didattica e Valutazione (GPOI)
+
+* **Monte Ore**: 2 ore di laboratorio a settimana (Ottobre 2026 – Marzo 2027).
+* **Ciclo di Sprint**: 4 Sprint da 4 settimane ciascuno (8 ore di laboratorio per Sprint).
+* **Consegna Report**: Al termine di ogni Sprint viene consegnato un report di avanzamento.
+* **Scala di Valutazione**: Voti da 1 a 10 assegnati secondo la [Rubrica di Valutazione GPOI](docs/rubrica-valutazione-gpoi.md).
+* **Documenti di Riferimento**:
+  * [Pianificazione Dettagliata dei 4 Sprint](docs/pianificazione-sprint.md)
+  * [Rubrica di Valutazione Docente](docs/rubrica-valutazione-gpoi.md)
+  * [Modello Report di Sprint per gli Studenti](docs/templates/template-report-sprint.md)
 
 ---
 
