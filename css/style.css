@@ -390,3 +390,46 @@ address {
   font-style: normal;
   line-height: 1.5;
 }
+
+/* --------------------------------------------------------------------------
+   8. OTTIMIZZAZIONE DI STAMPA (@media print)
+   -------------------------------------------------------------------------- */
+@media print {
+  .salto-contenuto,
+  nav[aria-label="Navigazione principale"],
+  nav[aria-label="Navigazione secondaria del piè di pagina"] {
+    display: none !important;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt;
+  }
+
+  body > header,
+  body > footer,
+  section,
+  article,
+  aside,
+  table {
+    background: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    border-color: #333333 !important;
+  }
+
+  body > header {
+    border-bottom: 2pt solid #000000;
+  }
+
+  h1, h2, h3 {
+    color: #000000 !important;
+  }
+
+  a {
+    color: #000000 !important;
+    text-decoration: underline;
+  }
+}
+
