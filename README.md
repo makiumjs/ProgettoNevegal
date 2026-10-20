@@ -82,16 +82,3 @@ ProgettoNevegal/
 Per le regole di contribuzione, il flusso Git e la **Definition of Done (DoD)** completa, consultare il file [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
-
-## 🔍 Collaudo Locale Rapido
-
-Per verificare in locale il rispetto dei vincoli architetturali prima di aprire una Pull Request:
-
-```bash
-# 1. Verifica assenza di tag <div> e <span> (deve restituire 0 occorrenze)
-grep -rn -i -E "<(div|span)([[:space:]>]|$)" . --include="*.html"
-
-# 2. Avvio server statico locale per testare navigazione e accessibilità da tastiera
-python3 -m http.server 8000
-```
-
