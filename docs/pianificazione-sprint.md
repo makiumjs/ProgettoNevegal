@@ -18,16 +18,50 @@
 
 ---
 
-## 🔄 Matrice di Rotazione Ruoli nei Feature Team
+## 🔄 Matrice di Rotazione Ruoli nei Feature Team (Classe 5ITB — 10 Studenti)
 
-Ogni team è composto da 4 studenti. La rotazione assicura che **ogni studente sperimenti tutti i 4 ruoli professionali** prima del termine del progetto a marzo:
+La classe 5ITB è organizzata in **4 Feature Team operativi** secondo lo schema **3-3-2-2**.  
+All'interno di ciascun team, i componenti ruotano le responsabilità a ogni Sprint per sperimentare tutte le aree professionali dell'ingegneria del software (Coordinamento, Contenuti territoriali, Sviluppo HTML/CSS, Controllo Qualità e Accessibilità):
 
-| Membro del Team | Sprint 1 | Sprint 2 | Sprint 3 | Sprint 4 |
+### 🏔️ Team 1 — Sentieri & Trekking (`sentieri.html` | Branch: `team-1/sentieri`)
+*Area: Anelli escursionistici, segnavia CAI, quote, dislivelli e tempi di percorrenza.*
+
+| Studente | Sprint 1 (Ott - Nov) | Sprint 2 (Nov - Dic) | Sprint 3 (Gen - Feb) | Sprint 4 (Feb - Mar) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Studente A** | *Scrum Master* | *Product Specialist* | *Core Developer* | *QA & Accessibilità* |
-| **Studente B** | *Product Specialist* | *Core Developer* | *QA & Accessibilità* | *Scrum Master* |
-| **Studente C** | *Core Developer* | *QA & Accessibilità* | *Scrum Master* | *Product Specialist* |
-| **Studente D** | *QA & Accessibilità* | *Scrum Master* | *Product Specialist* | *Core Developer* |
+| **Cristian Piccoli** | **Scrum Master & Lead Dev** | Product Specialist | QA & Accessibilità | Scrum Master & Release Mgr |
+| **Emanuele Borra** | QA & Data Specialist | **Scrum Master & QA** | Core Developer | Product Specialist |
+| **Enrico De Simoi** | Product & Content Specialist | Core Developer | **Scrum Master & Content Lead** | QA & Accessibilità |
+
+---
+
+### ⛷️ Team 2 — Sport & Outdoor (`sport.html` | Branch: `team-2/sport`)
+*Area: Bike Park, downhill, sci alpino, ciaspole, tracciati Coca/Grava e tariffe noleggio.*
+
+| Studente | Sprint 1 (Ott - Nov) | Sprint 2 (Nov - Dic) | Sprint 3 (Gen - Feb) | Sprint 4 (Feb - Mar) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Tommaso Cortina** | **Scrum Master & Lead Dev** | Product Specialist | QA & Accessibilità | Scrum Master & Release Mgr |
+| **Davide Gaio** | Product & Content Specialist | **Scrum Master & Content Lead** | Core Developer | QA & Accessibilità |
+| **Luca D'Incau** | QA & Code Reviewer | Core Developer | **Scrum Master & QA** | Product Specialist |
+
+---
+
+### 🧀 Team 3 — Rifugi & Sapori (`rifugi.html` | Branch: `team-3/rifugi`)
+*Area: Malghe d'alpeggio, rifugi in quota (Col Visentin, Bristot), prodotti tipici (Schiz, Pastin).*
+
+| Studente | Sprint 1 (Ott - Nov) | Sprint 2 (Nov - Dic) | Sprint 3 (Gen - Feb) | Sprint 4 (Feb - Mar) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Kevin Curto** | **Scrum Master & Content Lead** | Core Developer & QA | **Scrum Master & Content Lead** | Core Developer & QA |
+| **Francesco Bonetto** | Core Developer & QA | **Scrum Master & Content Lead** | Core Developer & QA | **Scrum Master & Content Lead** |
+
+---
+
+### ℹ️ Team 4 — Info, Meteo & Sicurezza (`info.html` | Branch: `team-4/info`)
+*Area: Linee Dolomiti Bus, accesso stradale, stazioni meteo, webcam e Soccorso Alpino (112/118).*
+
+| Studente | Sprint 1 (Ott - Nov) | Sprint 2 (Nov - Dic) | Sprint 3 (Gen - Feb) | Sprint 4 (Feb - Mar) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Giovanna David** | **Scrum Master & Content Lead** | Core Developer & QA | **Scrum Master & Content Lead** | Core Developer & QA |
+| **Cristina Ye** | Core Developer & QA Lead | **Scrum Master & Content Lead** | Core Developer & QA Lead | **Scrum Master & Content Lead** |
 
 ---
 

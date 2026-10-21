@@ -11,12 +11,17 @@
 * **Data di Consegna Report**: [GG/MM/AAAA]
 
 ### Assegnazione Ruoli per questo Sprint
+*(Consultare la matrice di rotazione ufficiale in `docs/pianificazione-sprint.md` per il proprio team e sprint)*
+
 | Ruolo | Cognome e Nome Studente | Mansioni Svolte |
 | :--- | :--- | :--- |
-| **Scrum Master** | | Coordinamento team, redazione report, gestione bacheca |
-| **Product Specialist** | | Ricerca contenuti, testi territoriali, coerenza informativa |
-| **QA & Accessibilità** | | Revisione codice, verifica accessibilità e W3C |
-| **Core Developer** | | Implementazione markup semantico e fogli di stile |
+| **Scrum Master** | | Coordinamento team, redazione report, gestione bacheca e limiti WIP |
+| **Product Specialist** | | Ricerca contenuti, testi territoriali, coerenza informativa e immagini |
+| **QA & Accessibilità** | | Revisione codice, verifica accessibilità (WCAG 2.1 AA+) e CI W3C |
+| **Core Developer** | | Implementazione markup semantico puro (zero div/span) e fogli di stile |
+
+> *Nota per i team da 2 persone (Team 3 e Team 4)*: le responsabilità sono accoppiate (Scrum Master + Product Specialist; Core Developer + QA Specialist) a rotazione alternata come da pianificazione.  
+> *Nota per i team da 3 persone (Team 1 e Team 2)*: le responsabilità seguono la rotazione a 3 ruoli definita in `docs/pianificazione-sprint.md`.
 
 ---
 

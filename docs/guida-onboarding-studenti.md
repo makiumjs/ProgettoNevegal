@@ -52,6 +52,36 @@ Aprite la cartella appena scaricata con il vostro editor (es. Visual Studio Code
 
 ---
 
+## 👥 4. I 4 Feature Team della Classe 5ITB (Chi fa cosa nello Sprint 1)
+
+Ogni studente fa riferimento al proprio team, alla propria pagina e al proprio branch dedicato:
+
+### 🏔️ Team 1: Sentieri & Trekking
+* **Componenti**: **Cristian Piccoli** (Scrum Master & Lead Dev), **Emanuele Borra** (QA & Data Specialist), **Enrico De Simoi** (Product & Content Specialist).
+* **Pagina da sviluppare**: `sentieri.html`
+* **Comando creazione branch**: `git checkout -b team-1/sentieri`
+* **Attività GitHub**: [Issue #1](https://github.com/makiumjs/ProgettoNevegal/issues/1)
+
+### ⛷️ Team 2: Sport & Outdoor
+* **Componenti**: **Tommaso Cortina** (Scrum Master & Lead Dev), **Davide Gaio** (Product & Content Specialist), **Luca D'Incau** (QA & Code Reviewer).
+* **Pagina da sviluppare**: `sport.html`
+* **Comando creazione branch**: `git checkout -b team-2/sport`
+* **Attività GitHub**: [Issue #2](https://github.com/makiumjs/ProgettoNevegal/issues/2)
+
+### 🧀 Team 3: Rifugi & Sapori
+* **Componenti**: **Kevin Curto** (Scrum Master & Content Lead), **Francesco Bonetto** (Core Developer & QA).
+* **Pagina da sviluppare**: `rifugi.html`
+* **Comando creazione branch**: `git checkout -b team-3/rifugi`
+* **Attività GitHub**: [Issue #3](https://github.com/makiumjs/ProgettoNevegal/issues/3)
+
+### ℹ️ Team 4: Info, Meteo & Sicurezza
+* **Componenti**: **Giovanna David** (Scrum Master & Content Lead), **Cristina Ye** (Core Developer & QA Lead).
+* **Pagina da sviluppare**: `info.html`
+* **Comando creazione branch**: `git checkout -b team-4/info`
+* **Attività GitHub**: [Issue #4](https://github.com/makiumjs/ProgettoNevegal/issues/4)
+
+---
+
 ## ⚠️ Regola d'Oro per Evitare Errori
 > **Non si lavora MAI direttamente sul ramo `main`.**  
-> Nelle prossime lezioni ogni team creerà il proprio ramo dedicato (es. `team-1/sentieri`) in modo da lavorare in totale autonomia e sicurezza!
+> Ogni team lavora esclusivamente sul proprio ramo dedicato (es. `team-1/sentieri`) in modo da procedere in totale autonomia e integrare il lavoro solo tramite Pull Request revisionata!
