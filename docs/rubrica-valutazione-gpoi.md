@@ -1,45 +1,69 @@
-# Rubrica di Valutazione GPOI (Scala 1 – 10)
+# Rubrica di Valutazione GPOI — Progetto Portale Monte Nevegal (Scala 1–10)
 
-Griglia ufficiale per la valutazione periodica dei report e del codice per il progetto "Portale Web Monte Nevegal" (Classe 5ITB).
-
----
-
-## 🎯 Dimensioni di Valutazione e Pesi Percentuali
-
-| Dimensione | Peso | Cosa Viene Valutato |
-| :--- | :---: | :--- |
-| **1. Conformità Tecnica & DoD** | **35%** | Rispetto del vincolo HTML5 Semantico Puro (zero `<div>`/`<span>`), accessibilità WCAG 2.1 AA+, superamento del controllo automatico W3C Validator su GitHub Actions. |
-| **2. Metodologia Git & Scrumban** | **25%** | Uso corretto dei rami dedicati (`team-X/...`), messaggi di commit convenzionali (*Conventional Commits*), aggiornamento dello stato delle *Issue* nella bacheca. |
-| **3. Qualità del Report di Sprint** | **20%** | Completezza del documento consegnato ogni 4 settimane, chiarezza nell'esposizione, analisi degli impedimenti (*blockers*) e pianificazione dello Sprint successivo. |
-| **4. Efficacia del Ruolo & Teamwork** | **20%** | Collaborazione attiva, puntualità nella consegna e competenza dimostrata nell'interpretazione del ruolo a rotazione per lo Sprint (*Scrum Master*, *QA*, *Developer*, *Product Specialist*). |
+**Destinatari:** Classe 5ITB — Indirizzo Informatica  
+**Materia:** Gestione Progetto e Organizzazione d'Impresa (GPOI)  
+**Cadenza di Valutazione:** Al termine di ogni Sprint (ogni 4 settimane, per un totale di 4 valutazioni formali).
 
 ---
 
-## 📋 Descrittori dei Voti (Scala 1 – 10)
+## 1. Pesi Percentuali dei Criteri di Valutazione
 
-### Fascia d'Eccellenza: Voto 9 – 10
-* **Tecnica**: Markup ineccepibile, validazione W3C verde al primo colpo, accessibilità pienamente implementata con tabelle e attributi `alt` accurati.
-* **Metodologia**: Flusso Git impeccabile con rami di feature puliti e *Pull Request* dettagliate.
-* **Report**: Report consegnato puntuale, approfondito, con evidenza numerica del lavoro svolto e proposte migliorative concrete.
-* **Team**: Rotazione ruoli perfetta, gestione autonoma degli impedimenti.
+Il voto complessivo di ciascuno Sprint (espresso in decimi, da **1 a 10**) è calcolato come media ponderata di **5 dimensioni progettuali**:
 
-### Fascia Positiva: Voto 7 – 8
-* **Tecnica**: Struttura semantica corretta con minime sbavature risolte rapidamente; validazione W3C superata.
-* **Metodologia**: Uso regolare dei rami e dei commit convenzionali; bacheca *Scrumban* aggiornata.
-* **Report**: Report completo e conforme al modello, con buona descrizione delle attività.
-* **Team**: Ruoli rispettati con discreta autonomia e rispetto dei tempi.
+| # | Dimensione Valutata | Peso (%) | Punteggio Max | Ruolo Primario Coinvolto |
+| :-: | :--- | :-: | :-: | :--- |
+| **1** | **Gestione Progetto, Board Scrumban & Report di Sprint** | **25%** | 2,5 punti | Scrum Master (+ tutto il Team) |
+| **2** | **Architettura HTML5 Semantico Puro (Zero `div`/`span`)** | **25%** | 2,5 punti | Core Developer |
+| **3** | **Accessibilità WCAG 2.1 AA+ & Validazione W3C** | **20%** | 2,0 punti | QA & Accessibilità |
+| **4** | **Qualità Contenuti, Coerenza Cross-Team & Usabilità** | **15%** | 1,5 punti | Product Specialist |
+| **5** | **Flusso Git, Pull Request, Commits & Collaborazione** | **15%** | 1,5 punti | Tutti i membri del Team |
+| | **TOTALE** | **100%** | **10,0 punti** | |
 
-### Fascia della Sufficienza: Voto 6
-* **Tecnica**: Vincoli minimi rispettati (assenza di `<div>`/`<span>`), ma con qualche carenza minore in accessibilità o dettagli informativi.
-* **Metodologia**: Lavoro concentrato a ridosso della scadenza, commit poco descrittivi ma rami separati correttamente.
-* **Report**: Report compilato in modo sintetico o minimale, ma con tutti i punti obbligatori presenti.
-* **Team**: Ruoli svolti in modo passivo, necessita di sollecito da parte del docente.
+> **Nota sulla responsabilità individuale e di gruppo:** Il voto di Sprint è composto per il **70%** dal risultato collettivo del Feature Team e per il **30%** dalla qualità dell'esecuzione del ruolo specifico ricoperto dallo studente nello Sprint corrente (verificabile tramite cronologia Git, Issue, revisioni PR e Report).
 
-### Fascia dell'Insufficienza: Voto 4 – 5
-* **Tecnica**: Presenza di tag non consentiti (`<div>`, `<span>`), errori segnalati dal validatore W3C non corretti, accessibilità trascurata.
-* **Metodologia**: Commit diretti sul ramo `main`, mancato utilizzo della bacheca o *Pull Request* prive di revisione.
-* **Report**: Report incompleto, privo di dati concreti o consegnato con ritardo ingiustificato.
-* **Team**: Conflitti interni irrisolti o mancata rotazione dei ruoli.
+---
 
-### Fascia Grave: Voto 1 – 3
-* **Consegna Assente o Lavoro Nullo**: Mancata consegna del report al termine delle 4 settimane, nessuna attività registrata su GitHub o totale mancato rispetto delle direttive di progetto.
+## 2. Griglia Descrittiva Analitica per Livelli (Scala 1–10)
+
+| Criterio (Peso) | Insufficiente Gr. (1 – 3) | Insufficiente (4 – 5) | Sufficiente (6) | Discreto / Buono (7 – 8) | Ottimo / Eccellente (9 – 10) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **1. Gestione Scrumban & Report (25%)** | Report non consegnato o privo di dati; Board assente o mai aggiornata. | Report incompleto o consegnato in ritardo; metriche di Sprint assenti; limiti WIP ignorati. | Report consegnato nei tempi con le sezioni minime; Board aggiornata solo a fine Sprint. | Report chiaro con metriche di avanzamento, impedimenti e retrospettiva; Board allineata alle PR. | Report di livello aziendale con analisi puntuale di velocity, rischi, metriche PR/Issue e piano di miglioramento continuo. |
+| **2. HTML5 Semantico Puro (25%)** | Uso diffuso di `<div>` e `<span>`; struttura semantica inesistente. | Presenza residua di `<div>`/`<span>`; uso improprio dei tag semantici (`<section>` senza titolo). | Zero `<div>`/`<span>`; struttura base (`<header>`, `<main>`, `<footer>`) presente e corretta. | Uso appropriato di `<article>`, `<section>`, `<aside>`, `<figure>`, `<time>`, `<address>` e `<dl>`. | Semantica impeccabile; tabelle complete di `<caption>` e `<th scope="...">`; markup pulito, manutenibile e auto-documentante. |
+| **3. Accessibilità WCAG 2.1 AA+ & W3C (20%)** | Pipeline CI fallita; numerosi errori W3C; assenza di `alt` e skip-link. | Errori W3C minori non corretti; salti nella gerarchia titoli (`h1` $\rightarrow$ `h3`); contrasto insufficiente. | Validazione W3C superata; un solo `<h1>`, gerarchia `h1`–`h3` rispettata e skip-link presente. | Attributi `alt` ricchi di contesto, focus da tastiera ben visibile, contrasto $\ge 4.5:1$ verificato. | Accessibilità esemplare testata da tastiera; uso accurato di `aria-label` e `aria-current="page"`; zero warning W3C. |
+| **4. Contenuti & Coerenza Cross-Team (15%)** | Presenza di *lorem ipsum* o testo copiato senza struttura; `<nav>` difforme dagli altri team. | Contenuti scarni o imprecisi; asset in `img/` con nomi non conformi (spazi o maiuscole). | Contenuti reali sul territorio del Nevegal; `<nav>` unificata corretta; file in `img/` in `kebab-case`. | Contenuti ben organizzati, dati reali (orari, dislivelli CAI, recapiti), ottima leggibilità mobile-first. | Ricerca territoriale/tecnica approfondita, perfetta integrazione con `index.html`, micro-copy chiaro e orientato al visitatore. |
+| **5. Flusso Git & Collaborazione (15%)** | Commit diretti su `main`; un solo studente ha effettuato tutti i commit del gruppo. | Branch disordinati; PR unite senza revisione o senza compilare il template DoD. | Uso di branch dedicati e PR verso `main`; partecipazione minima registrata da tutti i membri. | Messaggi di commit convenzionali e chiari; PR revisionate dal QA con checklist DoD spuntata. | Flusso Git rigoroso: Issue atomiche collegate alle PR, Code Review costruttive con commenti sul codice e contributi bilanciati. |
+
+---
+
+## 3. Penalità Automatiche (Regole di Sbarramento Architetturale)
+
+Per simulare gli standard reali di un reparto di ingegneria del software, si applicano le seguenti decurtazioni oggettive in sede di consegna dello Sprint:
+
+1. **Violazione Tassativa Anti-`<div>` / Anti-`<span>`:** **$-1,5$ punti** per ogni file HTML del team che contenga anche un solo tag `<div>` o `<span>` al momento della chiusura dello Sprint.
+2. **Commit Diretto su `main` (Bypass PR):** **$-1,0$ punto** per modifiche spinte direttamente sul branch principale senza Pull Request e approvazione del QA.
+3. **Presenza di *Lorem Ipsum*:** **$-1,0$ punto** per la presenza di testo fittizio non sostituito da contenuti reali.
+4. **Consegna Tardiva del Report di Sprint:** **$-0,5$ punti** per ogni giorno scolastico di ritardo rispetto alla scadenza della 4ª settimana.
+
+---
+
+## 4. Scheda Sintetica di Calcolo del Voto (Ad uso del Docente)
+
+```text
+Feature Team: ___________________   Sprint N.: [ 1 | 2 | 3 | 4 ]   Data: ___/___/202_
+
+[A] Gestione Scrumban & Report (max 2,5 pt):          _____ / 2,5
+[B] HTML5 Semantico Puro (max 2,5 pt):                _____ / 2,5
+[C] Accessibilità WCAG 2.1 AA+ & W3C (max 2,0 pt):    _____ / 2,0
+[D] Contenuti, Coerenza & Asset (max 1,5 pt):         _____ / 1,5
+[E] Flusso Git, PR & Collaborazione (max 1,5 pt):     _____ / 1,5
+-----------------------------------------------------------------
+SUBTOTALE TEAM (A + B + C + D + E):                   _____ / 10,0
+Eventuali Penalità Automatiche:                     - _____
+VOTO BASE TEAM:                                       _____ / 10,0
+
+Valutazione Individuale (70% Base Team + 30% Esecuzione Ruolo):
+- Scrum Master (______________________): Voto Finale = _____ / 10
+- Product Specialist (________________): Voto Finale = _____ / 10
+- QA & Accessibilità (________________): Voto Finale = _____ / 10
+- Core Developer (____________________): Voto Finale = _____ / 10
+```
