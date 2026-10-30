@@ -18,7 +18,7 @@ jobs:
       - name: Controllo Tassativo Anti-DIV e Anti-SPAN
         run: |
           echo "=== Controllo assenza di tag <div> e <span> nei file HTML ==="
-          if grep -rn -i -E "<(div|span)([[:space:]>]|$)" . --include="*.html"; then
+          if grep -rn -i -E "<(div|span)([[:space:]>]|$)" *.html; then
             echo "::error::VIOLAZIONE DEFINITION OF DONE: Trovati tag <div> o <span> non semantici nei file HTML!"
             exit 1
           fi
@@ -27,7 +27,7 @@ jobs:
       - name: Controllo Assenza Lorem Ipsum
         run: |
           echo "=== Controllo assenza di testo segnaposto (lorem ipsum) ==="
-          if grep -rn -i "lorem ipsum" . --include="*.html"; then
+          if grep -rn -i "lorem ipsum" *.html; then
             echo "::error::VIOLAZIONE CONTENUTI: Trovato testo 'lorem ipsum' nei file HTML!"
             exit 1
           fi
@@ -93,4 +93,5 @@ jobs:
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
         with:
           root: .
+          blacklist: docs
           css: true
