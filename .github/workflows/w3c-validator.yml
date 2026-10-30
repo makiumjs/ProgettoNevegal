@@ -2,7 +2,7 @@ name: Validazione W3C & Controllo Architetturale DoD
 
 on:
   push:
-    branches: [ "main", "develop", "feature/**", "sprint-**", "team-**" ]
+    branches: [ "main", "develop", "feature/**", "sprint-**", "team-**", "team[0-9]/**" ]
   pull_request:
     branches: [ "main" ]
 
