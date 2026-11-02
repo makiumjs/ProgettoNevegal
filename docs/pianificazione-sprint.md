@@ -68,7 +68,8 @@ All'interno di ciascun team, i componenti ruotano le responsabilità a ogni Spri
 ## 📊 Regole per la Valutazione Periodica
 
 1. **Scadenza Consegna**: Al termine della 4ª settimana di ogni Sprint, lo *Scrum Master* di ciascun team redige e consegna il report (basato sul modello in `docs/templates/template-report-sprint.md`).
-2. **Criteri di Valutazione Docente (Scala 1-10)**:
+2. **Governance Esclusiva della Board**: Solo lo *Scrum Master* in carica possiede l'autorità di modificare, assegnare e spostare le *Issue* tra le colonne della bacheca Scrumban (*To Do* $\rightarrow$ *In Progress* $\rightarrow$ *In Review* $\rightarrow$ *Done*), garantendo il rispetto dei limiti WIP (*Work In Progress*) e la disciplina di coordinamento.
+3. **Criteri di Valutazione Docente (Scala 1-10)**:
    - Dettagliati nella [Rubrica di Valutazione GPOI](rubrica-valutazione-gpoi.md).
    - Valutazione composta da una componente **di team** (avanzamento deliverable e rispetto DoD) e una **individuale** (efficacia nell'interpretazione del ruolo a rotazione).
 
