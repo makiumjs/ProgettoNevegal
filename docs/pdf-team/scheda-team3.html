@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Scheda To-Do Sprint 1 — Feature Team 3: Rifugi</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 12mm 15mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      line-height: 1.4;
+      font-size: 11pt;
+      background: #ffffff;
+    }
+    header {
+      border-bottom: 2px solid #d97706;
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .header-title h1 {
+      font-size: 18pt;
+      color: #d97706;
+      margin-bottom: 2px;
+    }
+    .header-title p {
+      font-size: 10pt;
+      color: #64748b;
+      font-weight: 500;
+    }
+    .header-badge {
+      background: #fef3c7;
+      color: #92400e;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 10pt;
+      border: 1px solid #fcd34d;
+    }
+    .meta-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 8px 12px;
+      margin-bottom: 12px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      font-size: 9.5pt;
+    }
+    .meta-item strong {
+      color: #0f172a;
+      display: block;
+      font-size: 8.5pt;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .pyramid-alert {
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      padding: 8px 12px;
+      margin-bottom: 14px;
+      font-size: 9.5pt;
+      border-radius: 0 6px 6px 0;
+    }
+    .pyramid-alert strong {
+      color: #1e40af;
+    }
+    h2 {
+      font-size: 12pt;
+      color: #0f172a;
+      margin: 12px 0 6px 0;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 3px;
+    }
+    table.todo-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 12px;
+      font-size: 9pt;
+    }
+    table.todo-table th, table.todo-table td {
+      border: 1px solid #cbd5e1;
+      padding: 6px 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+    table.todo-table th {
+      background: #f1f5f9;
+      color: #334155;
+      font-weight: 700;
+    }
+    .check-box {
+      width: 16px;
+      height: 16px;
+      border: 1.5px solid #64748b;
+      border-radius: 3px;
+      display: inline-block;
+      margin-right: 4px;
+      vertical-align: middle;
+    }
+    .badge-role {
+      display: inline-block;
+      font-size: 7.5pt;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .role-sm { background: #fee2e2; color: #991b1b; }
+    .role-qa { background: #fef3c7; color: #92400e; }
+    .code-box {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: #f1f5f9;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-size: 8pt;
+      color: #0f172a;
+    }
+    .terminal-card {
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 8pt;
+      line-height: 1.35;
+      margin-top: 8px;
+    }
+    .terminal-card .comment { color: #94a3b8; }
+    .terminal-card .cmd { color: #38bdf8; }
+    footer {
+      margin-top: 14px;
+      padding-top: 6px;
+      border-top: 1px dashed #cbd5e1;
+      font-size: 8pt;
+      color: #64748b;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-title">
+      <h1>🧀 Feature Team 3: Rifugi &amp; Sapori</h1>
+      <p>Progetto Portale Monte Nevegal — Classe 5ITB (Materia: GPOI)</p>
+    </div>
+    <div class="header-badge">Sprint 1 • Laboratorio 2h</div>
+  </header>
+
+  <div class="meta-box">
+    <div class="meta-item">
+      <strong>File di Lavoro</strong>
+      <code>rifugi.html</code>
+    </div>
+    <div class="meta-item">
+      <strong>Branch Integrazione Team</strong>
+      <code>team-3/rifugi</code>
+    </div>
+    <div class="meta-item">
+      <strong>Issue di Riferimento</strong>
+      Issue #3 (Sprint 1)
+    </div>
+  </div>
+
+  <div class="pyramid-alert">
+    <strong>📐 Flusso Piramidale Obbligatorio:</strong> Francesco Bonetto lavora sul branch <span class="code-box">feature/bonetto-schede-sapori</span> e apre la <strong>PR 1</strong> verso <span class="code-box">team-3/rifugi</span>. Lo Scrum Master <strong>Kevin Curto</strong> verifica la DoD, fa il merge e poi apre la <strong>PR 2</strong> verso <span class="code-box">main</span> per la review del Docente.
+  </div>
+
+  <h2>📋 Tabella Operativa To-Do per Membro</h2>
+  <table class="todo-table">
+    <thead>
+      <tr>
+        <th style="width: 24%;">Studente &amp; Ruolo</th>
+        <th style="width: 51%;">Task Operativo di Dettaglio</th>
+        <th style="width: 15%;">Branch Personale</th>
+        <th style="width: 10%; text-align: center;">Stato</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <strong>Kevin Curto</strong><br>
+          <span class="badge-role role-sm">Scrum Master &amp; Content Lead</span>
+        </td>
+        <td>
+          <strong>1. Governance Board:</strong> sposta l'Issue #3 in <em>In Progress</em>.<br>
+          <strong>2. Censimento Strutture:</strong> arricchisce la tabella rifugi e malghe (Col Visentin, Bristot, Faverghera, Toront, Grava) con quote e orari reali.<br>
+          <strong>3. Review PR 1:</strong> verifica gerarchia titoli (<code>h1</code> &rarr; <code>h2</code> &rarr; <code>h3</code>) e fa merge del lavoro di Bonetto.<br>
+          <strong>4. PR Finale:</strong> apre la PR 2 verso <code>main</code> e sposta Issue in <em>In Review</em>.
+        </td>
+        <td><code>team-3/rifugi</code><br><em>(Gestore Ramo)</em></td>
+        <td style="text-align: center;"><div class="check-box"></div></td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Francesco Bonetto</strong><br>
+          <span class="badge-role role-qa">Core Developer &amp; QA</span>
+        </td>
+        <td>
+          <strong>1. Onboarding GitHub:</strong> accetta l'invito su <span class="code-box">github.com/makiumjs/ProgettoNevegal/invitations</span>.<br>
+          <strong>2. Schede Gastronomiche:</strong> redige 3 schede <code>&lt;article&gt;</code> per Schiz Bellunese, Pastin e Formaggio Nevegal di malga.<br>
+          <strong>3. Tag Semantici:</strong> usa tag <code>&lt;time datetime="..."&gt;</code> per stagionalità e <code>&lt;dl&gt;</code> per abbinamenti gastronomici.<br>
+          <strong>4. PR 1:</strong> invia il branch e apre la PR verso <code>team-3/rifugi</code> per lo SM.
+        </td>
+        <td><code>feature/bonetto-schede-sapori</code></td>
+        <td style="text-align: center;"><div class="check-box"></div></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>💻 Comandi Terminale da Eseguire in Ordine</h2>
+  <div class="terminal-card">
+    <span class="comment"># 1. Allineamento con il repository centrale</span><br>
+    <span class="cmd">git checkout main &amp;&amp; git pull origin main</span><br>
+    <span class="comment"># 2. Creazione sotto-ramo personale (Bonetto)</span><br>
+    <span class="cmd">git checkout -b feature/bonetto-schede-sapori team-3/rifugi</span><br>
+    <span class="comment"># 3. Commit convenzionale e push per apertura PR 1</span><br>
+    <span class="cmd">git add rifugi.html &amp;&amp; git commit -m "feat(rifugi): censimento malghe e schede sapori"</span><br>
+    <span class="cmd">git push -u origin feature/bonetto-schede-sapori</span>
+  </div>
+
+  <footer>
+    <span>Docente: Prof. Marco Cassarino (ITP)</span>
+    <span>Definition of Done: Zero div/span • WCAG 2.1 AA+ • CI W3C Verde</span>
+    <span>Pagina 1/1</span>
+  </footer>
+
+</body>
+</html>

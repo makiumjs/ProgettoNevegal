@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Scheda To-Do Sprint 1 — Feature Team 1: Sentieri</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 12mm 15mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      line-height: 1.4;
+      font-size: 11pt;
+      background: #ffffff;
+    }
+    header {
+      border-bottom: 2px solid #15803d;
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .header-title h1 {
+      font-size: 18pt;
+      color: #15803d;
+      margin-bottom: 2px;
+    }
+    .header-title p {
+      font-size: 10pt;
+      color: #64748b;
+      font-weight: 500;
+    }
+    .header-badge {
+      background: #dcfce7;
+      color: #166534;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 10pt;
+      border: 1px solid #86efac;
+    }
+    .meta-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 8px 12px;
+      margin-bottom: 12px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      font-size: 9.5pt;
+    }
+    .meta-item strong {
+      color: #0f172a;
+      display: block;
+      font-size: 8.5pt;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .pyramid-alert {
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      padding: 8px 12px;
+      margin-bottom: 14px;
+      font-size: 9.5pt;
+      border-radius: 0 6px 6px 0;
+    }
+    .pyramid-alert strong {
+      color: #1e40af;
+    }
+    h2 {
+      font-size: 12pt;
+      color: #0f172a;
+      margin: 12px 0 6px 0;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 3px;
+    }
+    table.todo-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 12px;
+      font-size: 9pt;
+    }
+    table.todo-table th, table.todo-table td {
+      border: 1px solid #cbd5e1;
+      padding: 6px 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+    table.todo-table th {
+      background: #f1f5f9;
+      color: #334155;
+      font-weight: 700;
+    }
+    .check-box {
+      width: 16px;
+      height: 16px;
+      border: 1.5px solid #64748b;
+      border-radius: 3px;
+      display: inline-block;
+      margin-right: 4px;
+      vertical-align: middle;
+    }
+    .badge-role {
+      display: inline-block;
+      font-size: 7.5pt;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .role-sm { background: #fee2e2; color: #991b1b; }
+    .role-qa { background: #fef3c7; color: #92400e; }
+    .role-prod { background: #e0e7ff; color: #3730a3; }
+    .code-box {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: #f1f5f9;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-size: 8pt;
+      color: #0f172a;
+    }
+    .terminal-card {
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 8pt;
+      line-height: 1.35;
+      margin-top: 8px;
+    }
+    .terminal-card .comment { color: #94a3b8; }
+    .terminal-card .cmd { color: #38bdf8; }
+    footer {
+      margin-top: 14px;
+      padding-top: 6px;
+      border-top: 1px dashed #cbd5e1;
+      font-size: 8pt;
+      color: #64748b;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-title">
+      <h1>🏔️ Feature Team 1: Sentieri &amp; Trekking</h1>
+      <p>Progetto Portale Monte Nevegal — Classe 5ITB (Materia: GPOI)</p>
+    </div>
+    <div class="header-badge">Sprint 1 • Laboratorio 2h</div>
+  </header>
+
+  <div class="meta-box">
+    <div class="meta-item">
+      <strong>File di Lavoro</strong>
+      <code>sentieri.html</code>
+    </div>
+    <div class="meta-item">
+      <strong>Branch Integrazione Team</strong>
+      <code>team-1/sentieri</code>
+    </div>
+    <div class="meta-item">
+      <strong>Issue di Riferimento</strong>
+      Issue #1 (Sprint 1)
+    </div>
+  </div>
+
+  <div class="pyramid-alert">
+    <strong>📐 Flusso Piramidale Obbligatorio:</strong> I membri del team creano branch personali <span class="code-box">feature/cognome-compito</span> e aprono la <strong>PR 1</strong> verso <span class="code-box">team-1/sentieri</span>. Lo Scrum Master <strong>Cristian Piccoli</strong> verifica la DoD, fa il merge e poi apre la <strong>PR 2</strong> verso <span class="code-box">main</span> per la review del Docente.
+  </div>
+
+  <h2>📋 Tabella Operativa To-Do per Membro</h2>
+  <table class="todo-table">
+    <thead>
+      <tr>
+        <th style="width: 22%;">Studente &amp; Ruolo</th>
+        <th style="width: 53%;">Task Operativo di Dettaglio</th>
+        <th style="width: 15%;">Branch Personale</th>
+        <th style="width: 10%; text-align: center;">Stato</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <strong>Cristian Piccoli</strong><br>
+          <span class="badge-role role-sm">Scrum Master &amp; Lead</span>
+        </td>
+        <td>
+          <strong>1. Governance Board:</strong> sposta l'Issue #1 in <em>In Progress</em>.<br>
+          <strong>2. Struttura Pagina:</strong> verifica scheletro semantico puro (zero <code>&lt;div&gt;</code>/<code>&lt;span&gt;</code>).<br>
+          <strong>3. Review PR 1:</strong> controlla i contributi di Borra e De Simoi e fa merge su <code>team-1/sentieri</code>.<br>
+          <strong>4. PR Finale:</strong> apre la PR 2 verso <code>main</code> e sposta Issue in <em>In Review</em>.
+        </td>
+        <td><code>team-1/sentieri</code><br><em>(Gestore Ramo)</em></td>
+        <td style="text-align: center;"><div class="check-box"></div></td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Emanuele Borra</strong><br>
+          <span class="badge-role role-qa">QA &amp; Data Specialist</span>
+        </td>
+        <td>
+          <strong>1. Tabella Dislivelli:</strong> inserisce 4+ percorsi con <code>&lt;caption&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;th scope="col"&gt;</code> e <code>&lt;th scope="row"&gt;</code>.<br>
+          <strong>2. Accessibilità:</strong> collauda skip-link <code>#contenuto-principale</code> con tasto Tab.<br>
+          <strong>3. PR 1:</strong> esegue push e apre PR verso <code>team-1/sentieri</code> per review SM.
+        </td>
+        <td><code>feature/borra-tabelle-cai</code></td>
+        <td style="text-align: center;"><div class="check-box"></div></td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Enrico De Simoi</strong><br>
+          <span class="badge-role role-prod">Product &amp; Content</span>
+        </td>
+        <td>
+          <strong>1. Schede Itinerari:</strong> redige 3 schede reali con <code>&lt;article&gt;</code> (Anello Creste, Col Visentin, Faverghera).<br>
+          <strong>2. Dati Tecnici:</strong> struttura quote e tempi con tag <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code>, <code>&lt;dd&gt;</code> e <code>&lt;time&gt;</code>.<br>
+          <strong>3. Box Sicurezza:</strong> compila l'<code>&lt;aside&gt;</code> con norme di sicurezza CAI.
+        </td>
+        <td><code>feature/desimoi-schede-percorsi</code></td>
+        <td style="text-align: center;"><div class="check-box"></div></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>💻 Comandi Terminale da Eseguire in Ordine</h2>
+  <div class="terminal-card">
+    <span class="comment"># 1. Allineamento con il repository centrale</span><br>
+    <span class="cmd">git checkout main &amp;&amp; git pull origin main</span><br>
+    <span class="comment"># 2. Creazione sotto-ramo personale (es. Borra o De Simoi)</span><br>
+    <span class="cmd">git checkout -b feature/proprio-cognome-compito team-1/sentieri</span><br>
+    <span class="comment"># 3. Commit convenzionale e push per apertura PR 1</span><br>
+    <span class="cmd">git add sentieri.html &amp;&amp; git commit -m "feat(sentieri): arricchimento schede CAI"</span><br>
+    <span class="cmd">git push -u origin feature/proprio-cognome-compito</span>
+  </div>
+
+  <footer>
+    <span>Docente: Prof. Marco Cassarino (ITP)</span>
+    <span>Definition of Done: Zero div/span • WCAG 2.1 AA+ • CI W3C Verde</span>
+    <span>Pagina 1/1</span>
+  </footer>
+
+</body>
+</html>

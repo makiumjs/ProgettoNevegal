@@ -16,6 +16,11 @@ Il lavoro è organizzato in Sprint iterativi gestiti su board **Scrumban** (flus
 | **Accessibility & QA Specialist** | Verifica il rispetto dello standard WCAG 2.1 AA+, testa la navigazione da tastiera e controlla l'assenza di `<div>` / `<span>`. |
 | **Core Developer** | Implementa il codice semantico HTML5/CSS, risolve eventuali errori segnalati dal validatore W3C e mantiene pulita la cronologia Git. |
 
+### 🔒 Regola di Governance della Board Scrumban (Esclusiva Scrum Master)
+> **REGOLA D'ORO**: All'interno della bacheca di progetto (GitHub Projects / Kanban), **SOLO lo Scrum Master in carica ha il permesso di modificare, assegnare e spostare le Issue** tra le colonne (*To Do* $\rightarrow$ *In Progress* $\rightarrow$ *In Review* $\rightarrow$ *Done*).
+> * Gli altri componenti (*Core Developer*, *Product Specialist*) non possono trascinare arbitrariamente le schede.
+> * Qualsiasi cambio di stato avviene durante i **mini stand-up di allineamento** su richiesta del componente e previa verifica del responsabile **QA & Accessibilità** circa il soddisfacimento dei criteri di accettazione e della *Definition of Done*.
+
 ---
 
 ## 🌿 2. Strategia di Branching Git
