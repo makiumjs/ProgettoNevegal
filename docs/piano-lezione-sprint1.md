@@ -26,10 +26,11 @@ Insediamento della governance agile: rispetto dei limiti WIP e **controllo esclu
 
 | Feature Team | Pagina Assegnata | Branch Dedicato | Scrum Master Ufficiale (Sprint 1) | Compiti di Governance Odierni |
 | :--- | :--- | :--- | :--- | :--- |
-| **Team 1 — Sentieri** | `sentieri.html` | `team-1/sentieri` | **Cristian Piccoli** | Spostare Issue #1 in *In Progress*, verificare allineamento branch con Borra e De Simoi. |
-| **Team 2 — Sport** | `sport.html` | `team-2/sport` | **Tommaso Cortina** | Spostare Issue #2 in *In Progress*, verificare creazione branch e coordinare Gaio e D'Incau. |
-| **Team 3 — Rifugi** | `rifugi.html` | `team-3/rifugi` | **Kevin Curto** | Spostare Issue #3 in *In Progress*, coordinare bozza testi autentici con Bonetto. |
-| **Team 4 — Info & Sicurezza** | `info.html` | `team-4/info` | **Giovanna David** | Spostare Issue #4 in *In Progress*, revisionare primo commit di Cristina Ye e pianificare mobilità. |
+| **Team 1 — Sentieri** | `sentieri.html` | `team-1/sentieri` | **Cristian Piccoli** | Spostare Issue #1 in *In Progress*, coordinare unione rami Borra e De Simoi e aprire PR. |
+| **Team 2 — Sport** | `sport.html` | `team-2/sport` | **Tommaso Cortina** | Spostare Issue #2 in *In Progress*, accogliere Giovanna David e coordinare Gaio e D'Incau. |
+| **Team 3 — Rifugi** | `rifugi.html` | `team-3/rifugi` | **Kevin Curto** | Spostare Issue #3 in *In Progress*, accogliere Cristina Ye e coordinare stesura con Bonetto. |
+
+> ℹ️ **Nota di Progetto**: La pagina `info.html` (Issue #4) è stata completata e validata con successo ed è già stata consolidata sul ramo `main`. **Cristina Ye** e **Giovanna David** hanno ottenuto la valutazione per la milestone e sono riallocate nei Team 3 e 2 per sostenere la chiusura collettiva dello Sprint 1.
 
 ---
 
@@ -37,28 +38,29 @@ Insediamento della governance agile: rispetto dei limiti WIP e **controllo esclu
 
 ```mermaid
 flowchart TD
-    F1["Fase 1 (0-15 min)<br>Kick-off LIM & Patto Board"] --> F2["Fase 2 (15-30 min)<br>Sprint Planning & Board"]
-    F2 --> F3["Fase 3 (30-90 min)<br>Sviluppo Concorrente nei Team"]
+    F1["Fase 1 (0-15 min)<br>Kick-off LIM, Annuncio Consolidamento Info & Board"] --> F2["Fase 2 (15-30 min)<br>Sprint Planning & Board"]
+    F2 --> F3["Fase 3 (30-90 min)<br>Sviluppo Concorrente nei 3 Team"]
     F3 --> F4["Fase 4 (90-110 min)<br>Quality Gate, Commit & PR"]
     F4 --> F5["Fase 5 (110-120 min)<br>Stand-up Finale & Check Docente"]
 ```
 
 ### 1. Fase 1: Kick-off alla LIM & Regole di Governance (0 – 15 min)
 * Proiezione di GitHub Projects / Issues alla lavagna.
-* Enunciazione della regola: solo i 4 Scrum Master governano la bacheca.
+* Annuncio del consolidamento di `info.html` su `main` e nuova assegnazione di David (Team 2) e Ye (Team 3).
+* Enunciazione della regola: solo i 3 Scrum Master governano la bacheca.
 * Presentazione dei criteri di valutazione GPOI per lo Sprint 1 (DoD semantica e W3C).
 
 ### 2. Fase 2: Sprint Planning & Presa in Carico (15 – 30 min)
 * **Azione Scrum Master:**
-  * Cristian Piccoli, Tommaso Cortina, Kevin Curto e Giovanna David aprono GitHub sul proprio computer.
-  * Spostano la rispettiva Issue (#1, #2, #3, #4) dalla colonna **To Do** alla colonna **In Progress**.
+  * Cristian Piccoli, Tommaso Cortina e Kevin Curto aprono GitHub sul proprio computer.
+  * Spostano la rispettiva Issue (#1, #2, #3) dalla colonna **To Do** alla colonna **In Progress** (Issue #4 è già in *Done*).
   * Assegnano formalmente i compiti interni.
 * **Azione Developer:**
   * Verifica del branch locale (`git checkout team-X/...` o creazione con `git checkout -b team-X/...`).
 
 ### 3. Fase 3: Sviluppo Concorrente nei Feature Team (30 – 90 min)
-* **Product Specialist (De Simoi, Gaio, Curto, David):**
-  * Ricerca e stesura testi autentici del Monte Nevegal (quote CAI, orari navetta, rifugi aperti, noleggio).
+* **Product Specialist (De Simoi, Gaio, David, Curto):**
+  * Ricerca e stesura testi autentici del Monte Nevegal (quote CAI, rifugi aperti, tariffe noleggio).
   * Divieto assoluto di testo segnaposto (*lorem ipsum*).
 * **Core Developer (Piccoli, Cortina, Bonetto, Ye):**
   * Strutturazione dell'albero HTML5 puro: `<header>`, `<main id="contenuto-principale">`, `<section>`, `<article>`, `<aside>`, `<footer>`.

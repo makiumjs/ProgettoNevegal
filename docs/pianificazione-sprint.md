@@ -20,7 +20,7 @@
 
 ## 🔄 Matrice di Rotazione Ruoli nei Feature Team (Classe 5ITB — 10 Studenti)
 
-La classe 5ITB è organizzata in **4 Feature Team operativi** secondo lo schema **3-3-2-2**.  
+La classe 5ITB è organizzata in **3 Feature Team operativi** secondo lo schema **3-4-3** (a seguito del completamento e consolidamento anticipato di `info.html` da parte di Cristina Ye e Giovanna David, riallocate rispettivamente nei Team 3 e 2 per sostenere la chiusura dello Sprint 1).  
 All'interno di ciascun team, i componenti ruotano le responsabilità a ogni Sprint per sperimentare tutte le aree professionali dell'ingegneria del software (Coordinamento, Contenuti territoriali, Sviluppo HTML/CSS, Controllo Qualità e Accessibilità):
 
 ### 🏔️ Team 1 — Sentieri & Trekking (`sentieri.html` | Branch: `team-1/sentieri`)
@@ -40,6 +40,7 @@ All'interno di ciascun team, i componenti ruotano le responsabilità a ogni Spri
 | Studente | Sprint 1 (Ott - Nov) | Sprint 2 (Nov - Dic) | Sprint 3 (Gen - Feb) | Sprint 4 (Feb - Mar) |
 | :--- | :--- | :--- | :--- | :--- |
 | **Tommaso Cortina** | **Scrum Master & Lead Dev** | Product Specialist | QA & Accessibilità | Scrum Master & Release Mgr |
+| **Giovanna David** | **Product & Content Lead** | Core Developer & QA | **Scrum Master & Content Lead** | QA & Accessibilità |
 | **Davide Gaio** | Product & Content Specialist | **Scrum Master & Content Lead** | Core Developer | QA & Accessibilità |
 | **Luca D'Incau** | QA & Code Reviewer | Core Developer | **Scrum Master & QA** | Product Specialist |
 
@@ -52,16 +53,13 @@ All'interno di ciascun team, i componenti ruotano le responsabilità a ogni Spri
 | :--- | :--- | :--- | :--- | :--- |
 | **Kevin Curto** | **Scrum Master & Content Lead** | Core Developer & QA | **Scrum Master & Content Lead** | Core Developer & QA |
 | **Francesco Bonetto** | Core Developer & QA | **Scrum Master & Content Lead** | Core Developer & QA | **Scrum Master & Content Lead** |
+| **Cristina Ye** | **Lead Developer & QA** | Core Developer & QA | **Scrum Master & QA** | Core Developer & QA |
 
 ---
 
-### ℹ️ Team 4 — Info, Meteo & Sicurezza (`info.html` | Branch: `team-4/info`)
-*Area: Linee Dolomiti Bus, accesso stradale, stazioni meteo, webcam e Soccorso Alpino (112/118).*
-
-| Studente | Sprint 1 (Ott - Nov) | Sprint 2 (Nov - Dic) | Sprint 3 (Gen - Feb) | Sprint 4 (Feb - Mar) |
-| :--- | :--- | :--- | :--- | :--- |
-| **Giovanna David** | **Scrum Master & Content Lead** | Core Developer & QA | **Scrum Master & Content Lead** | Core Developer & QA |
-| **Cristina Ye** | Core Developer & QA Lead | **Scrum Master & Content Lead** | Core Developer & QA Lead | **Scrum Master & Content Lead** |
+### ℹ️ Pagina Comune Consolidata — Info, Meteo & Sicurezza (`info.html`)
+*Area: Linee Dolomiti Bus, accesso stradale, stazioni meteo, webcam e Soccorso Alpino (112/118).*  
+> **Completamento Sprint 1**: La pagina `info.html` è stata sviluppata e validata con standard W3C e WCAG eccellenti da **Cristina Ye** e **Giovanna David** e consolidata direttamente sul ramo `main`. Il deliverable di Sprint 1 per questa componente è pienamente soddisfatto e formalmente valutato. Per i successivi sprint, le evoluzioni CSS e JS saranno coordinate collegialmente tra i 3 team.
 
 ---
 

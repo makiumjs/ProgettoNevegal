@@ -176,7 +176,7 @@
   </div>
 
   <div class="pyramid-alert">
-    <strong>📐 Flusso Piramidale Obbligatorio:</strong> Francesco Bonetto lavora sul branch <span class="code-box">feature/bonetto-schede-sapori</span> e apre la <strong>PR 1</strong> verso <span class="code-box">team-3/rifugi</span>. Lo Scrum Master <strong>Kevin Curto</strong> verifica la DoD, fa il merge e poi apre la <strong>PR 2</strong> verso <span class="code-box">main</span> per la review del Docente.
+    <strong>📐 Flusso Piramidale Obbligatorio:</strong> Francesco Bonetto e Cristina Ye lavorano sui rispettivi branch <span class="code-box">feature/bonetto-...</span> e <span class="code-box">feature/ye-...</span> e aprono la <strong>PR 1</strong> verso <span class="code-box">team-3/rifugi</span>. Lo Scrum Master <strong>Kevin Curto</strong> verifica la DoD, fa il merge e poi apre la <strong>PR 2</strong> verso <span class="code-box">main</span> per la review del Docente.
   </div>
 
   <h2>📋 Tabella Operativa To-Do per Membro</h2>
@@ -197,8 +197,8 @@
         </td>
         <td>
           <strong>1. Governance Board:</strong> sposta l'Issue #3 in <em>In Progress</em>.<br>
-          <strong>2. Censimento Strutture:</strong> arricchisce la tabella rifugi e malghe (Col Visentin, Bristot, Faverghera, Toront, Grava) con quote e orari reali.<br>
-          <strong>3. Review PR 1:</strong> verifica gerarchia titoli (<code>h1</code> &rarr; <code>h2</code> &rarr; <code>h3</code>) e fa merge del lavoro di Bonetto.<br>
+          <strong>2. Coordinamento Team:</strong> coordina la stesura delle schede e redige il Report di Sprint 1.<br>
+          <strong>3. Review PR 1:</strong> verifica gerarchia titoli (<code>h1</code> &rarr; <code>h2</code> &rarr; <code>h3</code>) e fa merge di Bonetto e Ye.<br>
           <strong>4. PR Finale:</strong> apre la PR 2 verso <code>main</code> e sposta Issue in <em>In Review</em>.
         </td>
         <td><code>team-3/rifugi</code><br><em>(Gestore Ramo)</em></td>
@@ -207,15 +207,27 @@
       <tr>
         <td>
           <strong>Francesco Bonetto</strong><br>
-          <span class="badge-role role-qa">Core Developer &amp; QA</span>
+          <span class="badge-role role-prod">Core Developer &amp; Content</span>
         </td>
         <td>
-          <strong>1. Onboarding GitHub:</strong> accetta l'invito su <span class="code-box">github.com/makiumjs/ProgettoNevegal/invitations</span>.<br>
-          <strong>2. Schede Gastronomiche:</strong> redige 3 schede <code>&lt;article&gt;</code> per Schiz Bellunese, Pastin e Formaggio Nevegal di malga.<br>
-          <strong>3. Tag Semantici:</strong> usa tag <code>&lt;time datetime="..."&gt;</code> per stagionalità e <code>&lt;dl&gt;</code> per abbinamenti gastronomici.<br>
-          <strong>4. PR 1:</strong> invia il branch e apre la PR verso <code>team-3/rifugi</code> per lo SM.
+          <strong>1. Schede Rifugi:</strong> redige schede <code>&lt;article&gt;</code> per Rifugio Bristot, Col Visentin e Malghe.<br>
+          <strong>2. Tag Semantici:</strong> usa <code>&lt;address&gt;</code> per i contatti e <code>&lt;time&gt;</code> per orari e stagionalità.<br>
+          <strong>3. PR 1:</strong> invia il branch e apre la PR verso <code>team-3/rifugi</code> per lo SM.
         </td>
         <td><code>feature/bonetto-schede-sapori</code></td>
+        <td style="text-align: center;"><div class="check-box"></div></td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Cristina Ye</strong><br>
+          <span class="badge-role role-qa">Lead Developer &amp; QA</span>
+        </td>
+        <td>
+          <strong>1. Tabella Aperture &amp; Posti Letto:</strong> struttura tabella accessibile con <code>&lt;caption&gt;</code> e <code>&lt;th scope="col|row"&gt;</code>.<br>
+          <strong>2. Quality Gate:</strong> assicura il rispetto categorico di zero <code>&lt;div&gt;</code> e zero <code>&lt;span&gt;</code>.<br>
+          <strong>3. Validazione W3C:</strong> testa la conformità locale prima dell'apertura della PR 1.
+        </td>
+        <td><code>feature/ye-tabella-rifugi</code></td>
         <td style="text-align: center;"><div class="check-box"></div></td>
       </tr>
     </tbody>

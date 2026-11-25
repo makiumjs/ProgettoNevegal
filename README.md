@@ -67,9 +67,10 @@ ProgettoNevegal/
 | Team | Componenti (Alunni) | File Assegnato | Branch di Lavoro | Scrum Master (Sprint 1) | Contenuti Principali |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Team 1** | **Cristian Piccoli**, **Emanuele Borra**, **Enrico De Simoi** | `sentieri.html` | `team-1/sentieri` | **Cristian Piccoli** | Anelli escursionistici, segnavia CAI, dislivelli, tempi di percorrenza |
-| **Team 2** | **Tommaso Cortina**, **Davide Gaio**, **Luca D'Incau** | `sport.html` | `team-2/sport` | **Tommaso Cortina** | Bike Park, downhill, sci alpino, scialpinismo, ciaspole, noleggio |
-| **Team 3** | **Kevin Curto**, **Francesco Bonetto** | `rifugi.html` | `team-3/rifugi` | **Kevin Curto** | Malghe in quota, pernottamenti, formaggio Schiz, Pastin e cucina tipica |
-| **Team 4** | **Cristina Ye**, **Giovanna David** | `info.html` | `team-4/info` | **Giovanna David** | Mobilità Dolomiti Bus, accesso stradale, webcam, Soccorso Alpino (112/118) |
+| **Team 2** | **Tommaso Cortina**, **Giovanna David**, **Davide Gaio**, **Luca D'Incau** | `sport.html` | `team-2/sport` | **Tommaso Cortina** | Bike Park, downhill, sci alpino, scialpinismo, ciaspole, noleggio |
+| **Team 3** | **Kevin Curto**, **Francesco Bonetto**, **Cristina Ye** | `rifugi.html` | `team-3/rifugi` | **Kevin Curto** | Malghe in quota, pernottamenti, formaggio Schiz, Pastin e cucina tipica |
+
+> ℹ️ **Nota su `info.html`**: La pagina su mobilità Dolomiti Bus, soccorso alpino (112) e orari infopoint è stata completata con successo con standard semantici eccellenti da **Cristina Ye** e **Giovanna David** e consolidata direttamente su `main`. A seguito del completamento anticipato, Ye e David sono state riallocate sui Team 2 e 3 per supportare la chiusura dello Sprint 1.
 
 ---
 

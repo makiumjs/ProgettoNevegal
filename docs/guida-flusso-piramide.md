@@ -48,7 +48,7 @@ flowchart TD
 * **Team 1 (Sentieri):** Cristian Piccoli
 * **Team 2 (Sport):** Tommaso Cortina
 * **Team 3 (Rifugi):** Kevin Curto
-* **Team 4 (Info):** Giovanna David
+*(Nota: la pagina `info.html` è stata completata con successo da Cristina Ye e Giovanna David ed è già consolidata su `main`)*
 
 #### Compiti dello Scrum Master:
 1. Sposta l'Issue su GitHub Projects da *To Do* a *In Progress*.

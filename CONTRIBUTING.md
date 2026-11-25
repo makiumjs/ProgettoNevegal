@@ -27,12 +27,11 @@ Il lavoro è organizzato in Sprint iterativi gestiti su board **Scrumban** (flus
 
 È **vietato** effettuare commit diretti sul branch `main`. Tutto lo sviluppo avviene su branch dedicati integrati tramite **Pull Request (PR)**:
 
-1. **Branch Principale (`main`)**: Contiene esclusivamente codice stabile, validato dalla CI W3C e pubblicato su GitHub Pages.
+1. **Branch Principale (`main`)**: Contiene esclusivamente codice stabile, validato dalla CI W3C e pubblicato su GitHub Pages. Include la pagina `info.html` completata e consolidata con successo.
 2. **Branch di Feature Team (Assegnati agli Studenti)**:
    - `team-1/sentieri`: **Cristian Piccoli**, **Emanuele Borra**, **Enrico De Simoi**
-   - `team-2/sport`: **Tommaso Cortina**, **Davide Gaio**, **Luca D'Incau**
-   - `team-3/rifugi`: **Kevin Curto**, **Francesco Bonetto**
-   - `team-4/info`: **Cristina Ye**, **Giovanna David**
+   - `team-2/sport`: **Tommaso Cortina**, **Giovanna David**, **Davide Gaio**, **Luca D'Incau**
+   - `team-3/rifugi`: **Kevin Curto**, **Francesco Bonetto**, **Cristina Ye**
 3. **Flusso Operativo**:
    ```bash
    git checkout main

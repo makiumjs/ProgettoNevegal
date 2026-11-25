@@ -91,14 +91,14 @@ git push -u origin <nome-branch>
 ---
 
 ### ⛷️ FEATURE TEAM 2 — `sport.html` (Sport, Bike Park & Sci)
-*Situazione attuale:* Nessun branch o commit ancora caricato su GitHub. Bisogna partire subito e recuperare il lavoro oggi!
+*Situazione attuale:* Team rinforzato con l'ingresso di Giovanna David! Bisogna creare il branch, impostare lo scheletro e inserire testi e tabella tariffe oggi stesso.
 
 #### 4. 🎖️ Tommaso Cortina (*Scrum Master & Lead Dev*)
 * **Cosa devi fare:**
   1. Crea subito il branch ufficiale `team-2/sport` su GitHub.
   2. Sposta l'Issue #2 della bacheca GitHub da **To Do** a **In Progress**.
   3. Struttura lo scheletro della pagina `sport.html` in HTML5 Semantico Puro: `<main id="contenuto-principale">`, `<section>` per Downhill/Bike Park e `<section>` per Sci Alpino/Ciaspole.
-  4. Redigi il Report di Sprint 1 del Team 2.
+  4. Redigi il Report di Sprint 1 del Team 2 insieme a Giovanna David.
 * **Comandi Git da eseguire:**
   ```bash
   git checkout main
@@ -110,7 +110,14 @@ git push -u origin <nome-branch>
   git push -u origin team-2/sport
   ```
 
-#### 5. 📝 Davide Gaio (*Product & Content Specialist*)
+#### 5. 📝 Giovanna David (*Product & Content Lead*)
+* **Cosa devi fare:**
+  1. Porti nel Team 2 la tua esperienza organizzativa per dare ritmo al gruppo.
+  2. Coordina con Davide Gaio la stesura dei contenuti autentici e verifica la gerarchia dei titoli (`<h1>` unico, `<h2>` di sezione, `<h3>` per le schede).
+  3. Supporta Cortina nella redazione del Report di Sprint 1 per il Team 2.
+  4. Verifica prima della consegna che tutti i contenuti siano reali e privi di testi segnaposto.
+
+#### 6. 📝 Davide Gaio (*Content Specialist*)
 * **Cosa devi fare:**
   1. Raccogli e scrivi testi reali su:
      - **Bike Park Nevegal:** tracciati Downhill ed Enduro, noleggio e-bike e risalite con seggiovia.
@@ -118,7 +125,7 @@ git push -u origin <nome-branch>
   2. Nessun testo latino (*lorem ipsum*)!
   3. Inserisci i testi nelle card `<article>` preparate da Cortina.
 
-#### 6. 🔍 Luca D'Incau (*QA & Code Reviewer*)
+#### 7. 🔍 Luca D'Incau (*QA & Code Reviewer*)
 * **Cosa devi fare:**
   1. Progetta e codifica la **tabella delle tariffe e noleggio attrezzatura** in `sport.html`.
   2. Rispetta rigorosamente i criteri di accessibilità: inserisci `<caption>`, `<thead>`, `<tbody>`, `<th scope="col">` e `<th scope="row">`.
@@ -131,9 +138,9 @@ git push -u origin <nome-branch>
 ---
 
 ### 🧀 FEATURE TEAM 3 — `rifugi.html` (Rifugi in Quota & Sapori Tipici)
-*Situazione attuale:* Il branch `team-3/rifugi` è stato creato su GitHub ma non contiene ancora modifiche.
+*Situazione attuale:* Team rinforzato con l'ingresso di Cristina Ye! Uniamo le forze per popolare le schede dei rifugi e la tabella di apertura.
 
-#### 7. 🎖️ Kevin Curto (*Scrum Master & Content Lead*)
+#### 8. 🎖️ Kevin Curto (*Scrum Master & Content Lead*)
 * **Cosa devi fare:**
   1. Sposta l'Issue #3 su GitHub in **In Progress**.
   2. Raccogli e redigi i dati autentici di:
@@ -145,56 +152,40 @@ git push -u origin <nome-branch>
   ```bash
   git checkout team-3/rifugi
   git pull origin team-3/rifugi
-  # Lavora con Bonetto su rifugi.html
+  # Lavora con Bonetto e Ye su rifugi.html
   git add rifugi.html
   git commit -m "feat(rifugi): censimento malghe in quota e gastronomia bellunese"
   git push origin team-3/rifugi
   ```
 
-#### 8. 💻 Francesco Bonetto (*Core Developer & QA Specialist*)
+#### 9. 💻 Francesco Bonetto (*Core Developer*)
 * **Cosa devi fare:**
   1. Codifica le schede dei rifugi in `rifugi.html` usando `<article>`, inserendo per ciascuno:
      - Quota s.l.m. e periodo di apertura stagionale (con tag `<time>`).
      - Recapiti e contatti gestore racchiusi in tag `<address>`.
-  2. Implementa la tabella orari/aperture con `<caption>` e `<th scope="...">`.
-  3. Verifica il superamento del test semantico (zero `<div>`/`<span>`).
+  2. Lavora a stretto contatto con Cristina Ye per l'integrazione del codice.
+
+#### 10. 💻 Cristina Ye (*Lead Developer & QA Lead*)
+* **Cosa devi fare:**
+  1. Porti nel Team 3 la tua comprovata padronanza dell'HTML5 Semantico Puro (zero `<div>`/`<span>`) e della validazione W3C.
+  2. Progetta e codifica la **tabella delle aperture stagionali, altitudini e posti letto** in `rifugi.html` con `<caption>`, `<th scope="col">` e `<th scope="row">`.
+  3. Esegui il collaudo di accessibilità e la verifica W3C prima che Curto apra la Pull Request verso `main`.
+* **Comandi di verifica:**
+  ```bash
+  git checkout team-3/rifugi
+  grep -rnE '<(div|span)([[:space:]>])' rifugi.html
+  ```
 
 ---
 
-### ℹ️ FEATURE TEAM 4 — `info.html` (Mobilità Dolomiti Bus & Soccorso Alpino)
-*Situazione attuale:* Cristina Ye ha già scritto tutto il codice necessario con standard eccellenti. Serve solo unirlo nel branch di team e chiudere la consegna!
-
-#### 9. 🎖️ Giovanna David (*Scrum Master & Content Lead*)
-* **Cosa devi fare:**
-  1. Sposta l'Issue #4 della bacheca GitHub in **In Progress** e poi in **In Review**.
-  2. Coordina con Cristina Ye l'unione del suo lavoro dal branch `CriYe007-patch-1` al branch ufficiale `team-4/info`.
-  3. Compila il Report di Sprint 1 per il Team 4 (evidenziando i dati raccolti su Dolomiti Bus Linea 11 e Soccorso Alpino 112/118).
-  4. Apri la Pull Request finale da `team-4/info` verso `main`.
-* **Comandi Git da eseguire:**
-  ```bash
-  git checkout team-4/info
-  git pull origin team-4/info
-  git merge origin/CriYe007-patch-1
-  git push origin team-4/info
-  ```
-
-#### 10. 💻 Cristina Ye (*Core Developer & QA Lead*)
-* **Cosa devi fare:**
-  1. Hai già realizzato un codice eccellente con orari reali Dolomiti Bus, contatti Infopoint e numeri di emergenza.
-  2. Supporta Giovanna nell'eseguire il merge su `team-4/info`.
-  3. Assicurati che al termine del push la pipeline GitHub Actions rimanga verde con zero errori di validazione W3C.
-* **Comandi Git da eseguire:**
-  ```bash
-  git checkout team-4/info
-  git pull origin team-4/info
-  # Verifica che tutto sia allineato
-  git log -n 3 --oneline
-  ```
+### ℹ️ PAGINA CONSOLIDATA — `info.html` (Traguardo Sprint 1 Raggiunto)
+* **Stato:** ✅ **Completata al 100% e integrata nel ramo `main`**.
+* La pagina `info.html` (trasporti Dolomiti Bus, soccorso alpino 112, orari infopoint) è stata interamente realizzata e validata da **Cristina Ye** e **Giovanna David** con valutazione piena di Sprint 1. L'Issue #4 è promossa a **Done**.
 
 ---
 
 ## 🏁 Checklist Finale di Uscita per Ogni Team (Definition of Done)
-Prima di lasciare l'aula, ogni Scrum Master deve accertarsi che:
+Prima di lasciare l'aula, ogni Scrum Master (Team 1, 2, 3) deve accertarsi che:
 - [ ] Il file assegnato al team è stato salvato, committato e pushato sul branch `team-X/...`.
 - [ ] La Pull Request verso `main` è stata aperta su GitHub.
 - [ ] La pipeline CI W3C termina con la spunta verde (`✓`).
